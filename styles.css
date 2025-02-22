@@ -1,0 +1,360 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px; 
+}
+
+/* Navbar Styling */
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #1e3c72, #6498f1); /* Gradient Background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Navbar Links */
+.nav-link, .contact-btn {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Hover Circle Effect */
+.hover-circle {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    background: rgba(255, 255, 255, 0.2); /* Slightly visible */
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s, transform 0.1s;
+}
+
+/* Apply invert effect when hovering */
+.navbar:hover {
+    filter: invert(1); /* Inverts colors */
+}
+
+/* Show circle when hovering */
+.navbar:hover .hover-circle {
+    opacity: 1;
+}
+
+/* JavaScript to move the circle with cursor */
+
+#btn1 {
+    background: linear-gradient(to right, rgba(7, 194, 231, 1), rgba(23, 59, 175, 1));
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 5px 30px; /* Reduced top-bottom padding */
+    display: inline-block;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    font-size: 14px; /* Optional: Adjust text size */
+}
+
+/* Optional: Add hover effect */
+.btn:hover {
+    background: linear-gradient(to right, rgba(23, 59, 175, 1), rgba(7, 194, 231, 1));
+}
+
+.home-image {
+    margin-top: 60px;
+    background: url('hospital.jpg') no-repeat center center/cover;
+    width: 100vw;  /* Takes full viewport width */
+    height: auto;  /* Adjust height based on content */
+    min-height: 400px; /* Ensure a minimum height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    margin-left: 80px;
+}
+.facility-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.facility {
+    background: white; /* White background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Black shadow effect */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    width: 250px; /* Adjust width as needed */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.facility:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.facility h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.facility p {
+    color: #555;
+    font-size: 14px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between services */
+    flex-wrap: wrap; /* Responsive layout */
+}
+
+.service {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #555;
+    font-size: 14px;
+}
+
+.feedback {
+    padding: 40px;
+}
+
+.feedback-layout {
+    display: flex;
+    align-items: stretch; /* Ensures both sections have equal height */
+}
+
+.feedback-highlight {
+    background: #c4beeb;
+    color: white;
+    font-size: 1.5rem;
+    padding: 40px;
+    width: 25%;
+    border-radius: 10px 0 0 10px; /* Rounded left corners */
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-content {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 0 10px 10px 0; /* Rounded right corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-title h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feedback-title h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedback-box {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feedback-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.feedback-box p {
+    flex: 1;
+    font-size: 14px;
+    color: #555;
+}
+
+.feedback-box h4 {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+#div11{
+    align-items: center;;
+}
+.hed21 {
+    
+    color: #24129e;
+    text-align: center;
+    padding: 10px 20px;
+    width: 50%;  /* Controls width */
+    margin: 20px auto;  /* Centers the block element */
+    display: block;  /* Ensures full width is used */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+#hed31{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px 20px;
+    width: 50%;  /* Controls width */
+    margin: 20px auto;  /* Centers the block element */
+    display: block;  /* Ensures full width is used */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.a1{
+    margin-left:20px;
+}
+
+.custom-div {
+    margin: 20px 200px 0 200px; /* 20px top, 100px left & right, 0 bottom */
+    padding: 10px;
+    background-color: #ffffff; /* Light grey background */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.custom-div h3 {
+    margin: 0; /* Removes extra margin from h3 */
+    text-align: center; /* Centers text */
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Reduce space between image and text */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px; /* Adjust as needed */
+    margin: auto; /* Centers the div */
+}
+
+.content-box img {
+    width: 40%; /* Make it responsive */
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.text-content {
+    flex: 1; /* Ensures text expands */
+    min-width: 200px; /* Prevents text from shrinking too much */
+}
+
+.text-content h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.text-content p {
+    color: #555;
+    font-size: 16px;
+}
+
+#a11{
+    margin-left: 20px;
+}
+
+#a12{
+    margin-right: 300px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.hero-btn {
+    position: absolute;
+    top: 50%;
+    right: 10%;  /* Moves the button to the right */
+    transform: translateY(-50%);
+    background: linear-gradient(to right, rgba(7, 194, 231, 1), rgba(23, 59, 175, 1));;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: linear-gradient(to right, rgba(23, 59, 175, 1), rgba(7, 194, 231, 1));;
+}
