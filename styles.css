@@ -148,6 +148,81 @@ body {
     font-size: 14px;
 }
 
+.container2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Appointment Form */
+.appointment-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Limit the max width */
+}
+
+.appointment-form h1 {
+    color:rgba(23, 59, 175, 1);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}   
+
+.form-group input[type="date"],
+.form-group input[type="time"] {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    
+    color: #fff;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, rgba(7, 194, 231, 1), rgba(23, 59, 175, 1));
+    transition: 0.3s;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, rgba(23, 59, 175, 1), rgba(7, 194, 231, 1));;
+
+}
+
 .feedback {
     padding: 40px;
 }
