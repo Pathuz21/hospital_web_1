@@ -89,7 +89,44 @@
         <p>Information about the hospital.</p>
     </section>
     
-   
+   <div class="container2">
+        <section class="appointment-form">
+            <h1>Book an Appointment</h1>
+            <form action="/submit" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-date">Appointment Date</label>
+                    <input type="date" id="appointment-date" name="appointment_date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-time">Appointment Time</label>
+                    <input type="time" id="appointment-time" name="appointment_time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Reason for Appointment</label>
+                    <textarea id="reason" name="reason" placeholder="Describe the reason for your appointment" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </section>
+    </div>
     
         <section class="feedback">
             <div class="feedback-layout">
