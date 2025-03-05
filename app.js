@@ -1,6 +1,14 @@
-const hoverCircle = document.querySelector(".hover-circle");
 
-document.querySelector(".navbar").addEventListener("mousemove", (e) => {
-    hoverCircle.style.left = `${e.clientX - 75}px`;
-    hoverCircle.style.top = `${e.clientY - 75}px`;
+
+$(document).ready(function(){
+    $('.home-image').slick({
+        dots: true,
+        infinite: false, // Change to false if you don't want continuous scrolling
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000, // Adjust scroll speed
+        arrows: false
+    });
 });

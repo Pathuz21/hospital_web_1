@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding-top: 60px; 
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* Navbar Styling */
 /* Navbar Styling */
@@ -29,26 +32,9 @@ body {
     transition: 0.3s;
 }
 
-/* Hover Circle Effect */
-.hover-circle {
-    position: fixed;
-    width: 75px;
-    height: 75px;
-    background: rgba(255, 255, 255, 0.2); /* Slightly visible */
-    border-radius: 50%;
-    pointer-events: none;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s, transform 0.1s;
-}
-
-/* Apply invert effect when hovering */
+/* Remove hover effects */
 .navbar:hover {
-    filter: invert(1); /* Inverts colors */
-}
-
-/* Show circle when hovering */
-.navbar:hover .hover-circle {
-    opacity: 1;
+    /* No color inversion and no circle */
 }
 
 /* JavaScript to move the circle with cursor */
@@ -73,10 +59,12 @@ body {
 
 .home-image {
     margin-top: 60px;
-    background: url('hospital.jpg') no-repeat center center/cover;
-    width: 100vw;  /* Takes full viewport width */
-    height: auto;  /* Adjust height based on content */
-    min-height: 400px; /* Ensure a minimum height */
+    background: url('hospital.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Enables parallax effect */
+    width: 100vw;  
+    height: auto;  
+    min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,6 +73,10 @@ body {
     margin-left: 80px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d4650c (Your commit message here)
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -386,7 +378,6 @@ body {
     align-items: center;;
 }
 .hed21 {
-    
     color: #24129e;
     text-align: center;
     padding: 10px 20px;
@@ -394,6 +385,12 @@ body {
     margin: 20px auto;  /* Centers the block element */
     display: block;  /* Ensures full width is used */
     border-radius: 10px; /* Optional: Rounded corners */
+    transition: filter 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Invert effect on hover */
+.hed21:hover {
+    filter: invert(1);
 }
 
 #hed31{
