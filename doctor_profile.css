@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Doctor Profile */
+.doctor-profile {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for the profile */
+.doctor-profile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the profile image */
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Profile Details */
+.profile-details h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgba(23, 59, 175, 1);
+}
+
+.profile-details p {
+    font-size: 1em;
+    color: #555;
+    margin: 3px 0;
+}
+
+/* Profile Bio */
+.profile-bio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-bio h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-bio p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    transition: color 0.3s ease-in-out;
+}
+
+
