@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Social Media - Haripur Multispeciality Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        function showMap() {
+            document.getElementById("google-map").style.display = "block";
+            document.getElementById("get-directions-btn").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="hospital-info">
+            <h1>Haripur Multispeciality Hospital</h1>
+            <p class="address"><strong>Address:</strong> 123, Main Road, Haripur, Sangli</p>
+            <p class="contact"><strong>Contact:</strong> +92 300 1234567</p>
+            <p class="email"><strong>Email:</strong> contact@haripurhospital.com</p>
+            <button id="get-directions-btn" onclick="showMap()" class="get-directions">Get Directions</button>
+        </div>
+
+        <!-- Initially hidden Google Map Section -->
+        <div id="google-map" class="google-map" style="display: none;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488726.797628817!2d74.749171215625!3d16.867081770343248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1192cb8b19f67%3A0x738c82027663a546!2sHaripur%20multi-speciality%20clinic!5e0!3m2!1sen!2sin!4v1743696878833!5m2!1sen!2sin" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="social-media">
+            <h2>Follow Us On</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yourhospital" target="_blank" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/yourhospital" target="_blank" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
